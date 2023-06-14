@@ -72,7 +72,12 @@ export function setActiveLink(topnav, activeUrl) {
 export async function handleHttpErrors(res) {
   if (!res.ok) {
     const errorResponse = await res.json();
-    const error = new Error(errorResponse.message)
+    let error;
+    if (!errorResponse.message) {
+      error = new Error("Something went wrong")
+    } else {
+      error = new Error(errorResponse.message)
+    }
     // @ts-ignore
     error.fullResponse = errorResponse
     throw error

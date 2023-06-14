@@ -1,0 +1,46 @@
+<template>
+    <div class="container-fluid flex shadow p-3 mb-5 rounded">
+        <div class="flex-body">
+            <h1>Create an Event!</h1>
+        </div>
+        <form id="add-event-form">
+            <div class="flex-body">
+                <label for="event-name">Name</label>
+                <input id="event-name" type="text" required>
+            </div>
+
+            <div class="flex-body">
+                <label for="event-description">Description</label>
+                <input id="event-description" type="text" required>
+            </div class="flex-body">
+
+            <div class="flex-body">
+                <label for="event-capacity">Capacity</label>
+                <input id="event-capacity" type="number" required>
+            </div class="flex-body">
+
+            <div>
+                <div class="flex-body">
+                    <label for="event-date">Date</label>
+                    <input id="event-date" type="date" required>
+                </div>
+
+                <div class="flex-body">
+                    <label for="event-time">Time</label>
+                    <input id="event-time" type="time" required>
+                </div>
+            </div>
+
+            <div id="request-container">
+                <button id="btn-submit-event" type="submit" class="btn btn-primary">
+                    <span id="spinner" class="spinner-border spinner-border-sm d-none" role="status"
+                        aria-hidden="true"></span>
+                    Submit
+                </button>
+                <div class="flex-body">
+                    <p id="update"></p>
+                </div>
+            </div>
+        </form>
+    </div>
+</template>

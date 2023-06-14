@@ -1,0 +1,30 @@
+
+
+
+
+.event-body {
+    background-color: var(--quaternary-color-light);
+    border-radius: 15px;
+
+
+}
+
+
+.flex-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+
+.view-events-flex {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color-light);
+    width: 86.5vmax;
+    margin-top: 10px;
+}
+

@@ -1,3 +1,50 @@
 @import url(notFound.css);
 @import url(menu.css);
 @import url(about.css);
+@import url(colours.css);
+@import url(viewEvents.css);
+
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color-light);
+    width: 75vmax;
+    margin-top: 10px;
+}
+
+.flex input {
+    border-radius: 5px;
+}
+
+.flex label {
+    margin-right: 6px;
+    margin-left: 3px;
+}
+
+.flex-body {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.flex-title {
+    display: flex;
+    justify-content: center;
+    margin : 5px;
+
+}
+
+
+body {
+    background-color: var(--tertiary-color-light);
+}
+
+
+
+
+
+
