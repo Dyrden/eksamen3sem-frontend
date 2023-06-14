@@ -1,0 +1,14 @@
+@import url(colours.css);
+
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.menu-color {
+    background-color: var(--primary-color);
+}
+
+

@@ -1,0 +1,12 @@
+.about-flex div {
+    display: flex;
+}
+
+.about-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content-center {
+    justify-content: center;
+}

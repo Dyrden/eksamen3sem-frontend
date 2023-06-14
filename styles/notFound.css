@@ -1,0 +1,15 @@
+
+
+
+.notFound-flex div {
+    display: flex;
+}
+
+.notFound-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.notFound-content-center {
+    justify-content: center;
+}
