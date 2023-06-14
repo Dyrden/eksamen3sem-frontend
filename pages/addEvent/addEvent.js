@@ -29,7 +29,7 @@ async function addEvent(event) {
         btn.removeAttribute("disabled")
         btn.innerText = "Submit"
 
-        update.innerText = "Event created!"
+        update.innerText = "Event created!" 
         update.classList.add("text-success")
         
 

@@ -3,6 +3,7 @@
 @import url(about.css);
 @import url(colours.css);
 @import url(viewEvents.css);
+@import url(findEvent.css);
 
 
 .flex {
@@ -43,6 +44,10 @@ body {
     background-color: var(--tertiary-color-light);
 }
 
+
+.nav-space {
+    margin-right: 10px;
+}
 
 
 

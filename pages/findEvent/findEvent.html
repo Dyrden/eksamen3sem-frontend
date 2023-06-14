@@ -1,0 +1,25 @@
+<template>
+
+    <div class="container-fluid flex shadow p-3 mb-5 rounded">
+        <div class="flex-title">
+            <h1>
+                Find Event!
+            </h1>
+        </div>
+        <div class="flex-body">
+            <form id="find-event-form">
+                <label for="event-id">Find event by ID: </label>
+                <input id="event-id" type="number" required>
+                <button id="btn-find-event-submit" type="submit">Find</button>
+            </form>
+        </div>
+        <div class="flex-body">
+            <p id="update"></p>
+        </div>
+    </div>
+    
+    <div class="find-event-container">
+        <div id="card" class="find-event-container"></div>
+    </div>
+
+</template>

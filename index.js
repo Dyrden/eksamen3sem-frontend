@@ -8,6 +8,7 @@ import {
 } from "./utils.js";
 import { initAddEvent } from "./pages/addEvent/addEvent.js";
 import { initViewEvents } from "./pages/viewEvents/viewEvents.js";
+import { initFindEvent } from "./pages/findEvent/findEvent.js";
 
 window.addEventListener("load", async () => {
   const templateHome = await loadTemplate("./pages/home/home.html");
@@ -15,6 +16,7 @@ window.addEventListener("load", async () => {
   const templateNotFound = await loadTemplate("./pages/notFound/notFound.html");
   const templateAddEvent = await loadTemplate("./pages/addEvent/addEvent.html");
   const templateViewEvents = await loadTemplate("./pages/viewEvents/viewEvents.html");
+  const templateFindEvent = await loadTemplate("./pages/findEvent/findEvent.html");
 
   adjustForMissingHash();
 
@@ -43,6 +45,11 @@ window.addEventListener("load", async () => {
       "/viewEvents": () => {
         renderTemplate(templateViewEvents, "content");
         initViewEvents()
+      },
+      "/findEvent": (match) => {
+        console.log(match)
+        renderTemplate(templateFindEvent, "content");
+        initFindEvent(match)
       },  
     })
     .notFound(() => {
