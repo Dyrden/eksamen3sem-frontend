@@ -16,7 +16,7 @@ export function initFindEvent(match) {
 
 
 
-function getEvent(event) {
+export function getEvent(event) {
     event.preventDefault();
     const id = document.getElementById("event-id").value;
     try {

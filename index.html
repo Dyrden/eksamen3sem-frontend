@@ -20,14 +20,20 @@
                 <li class="nav-item nav-space">
                     <a class="nav-link link-light" href="/about" data-navigo>About</a>
                 </li>
-                <li class="nav-item nav-space">
-                    <a class="nav-link link-light" href="/addEvent" data-navigo>Add Event</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown">Event</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/addEvent" data-navigo>Add</a></li>
+                        <li><a class="dropdown-item" href="/viewEvents" data-navigo>View All</a></li>
+                        <li><a class="dropdown-item" href="/findEvent" data-navigo>Find</a></li>
+                        <li><a class="dropdown-item" href="/editEvent" data-navigo>Edit</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item nav-space">
-                    <a class="nav-link link-light" href="/viewEvents" data-navigo>View Events</a>
+                    <a class="nav-link link-light" href="/reserve" data-navigo>Reserve</a>
                 </li>
                 <li class="nav-item nav-space">
-                    <a class="nav-link link-light" href="/findEvent" data-navigo>Find Event</a>
+                    <a class="nav-link link-light" href="/removeReserve" data-navigo>Remove Reservation</a>
                 </li>
             </ul>
         </div>

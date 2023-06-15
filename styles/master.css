@@ -4,6 +4,7 @@
 @import url(colours.css);
 @import url(viewEvents.css);
 @import url(findEvent.css);
+@import url(editEvent.css);
 
 
 .flex {
@@ -11,6 +12,7 @@
     flex-direction: column;
     height: fit-content;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     background-color: var(--secondary-color-light);
     width: 75vmax;
@@ -47,6 +49,13 @@ body {
 
 .nav-space {
     margin-right: 10px;
+}
+
+.beaver {
+    display: flex;
+    justify-content: center;
+    width: 80vh;
+    height: 80vh;
 }
 
 

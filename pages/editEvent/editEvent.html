@@ -1,0 +1,56 @@
+<template>
+    <div class="edit-event-flex container shadow p-3 mb-5 rounded">
+        <div class="flex-title">
+            <h2>Edit Event!</h2>
+
+        </div>
+        <div class="edit-event-flex-horizontal edit-event-spacer">
+            <form id="find-event-form">
+            <div class="edit-event-flex-left-container">
+                    <div>
+                        <label for="event-id" type="text">id for event</label>
+                        <input id="event-id" type="number">
+                    </div>
+                    <div>
+                        <button type="submit">submit</button>
+                    </div>
+                </div>
+                
+            </form>
+            <form id="edited-event-form">
+            <div class="edit-event-flex-right-container">
+                    <div>
+                        <label for="event-to-edit-id">Id</label>
+                        <input id="event-to-edit-id" type="text" style="background-color: lightgray;">
+                    </div>
+                    <div>
+                        <label for="event-name">Name</label>
+                        <input id="event-name" type="text">
+                    </div>
+                    <div>
+                        <label for="event-description">Description</label>
+                        <input id="event-description" type="text">
+                    </div>
+                    <div>
+                        <label for="event-capacity">Capacity</label>
+                        <input id="event-capacity" type="text">
+                    </div>
+                    <div>
+                        <label for="event-date">Date</label>
+                        <input id="event-date" type="date">
+                    </div>
+                    <div>
+                        <label for="event-time">Time</label>
+                        <input id="event-time" type="time">
+                    </div>
+                    <div>
+                        <button type="submit">submit edit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <p id="update"></p>
+        </div>
+    </div>
+</template>
